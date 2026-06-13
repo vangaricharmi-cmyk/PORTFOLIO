@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+/* Header */
+header{
+    background:linear-gradient(135deg,#0077ff,#00c6ff);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.profile-img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:5px solid white;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+header h1{
+    font-size:40px;
+}
+
+header p{
+    font-size:18px;
+    margin-top:10px;
+}
+
+/* Sections */
+section{
+    padding:50px 20px;
+    max-width:1000px;
+    margin:auto;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:25px;
+    color:#0077ff;
+}
+
+/* About */
+.about p{
+    text-align:center;
+    line-height:1.8;
+}
+
+/* Skills */
+.skills-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.skill{
+    background:#0077ff;
+    color:white;
+    padding:12px 20px;
+    border-radius:25px;
+    font-weight:bold;
+}
+
+/* Projects */
+.project-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.project-card{
+    background:white;
+    width:300px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+}
+
+.project-card h3{
+    color:#0077ff;
+    margin-bottom:10px;
+}
+
+/* Resume */
+.resume{
+    text-align:center;
+}
+
+.resume a{
+    display:inline-block;
+    background:#0077ff;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    margin-top:15px;
+}
+
+/* Contact */
+.contact{
+    text-align:center;
+    line-height:2;
+}
+
+/* Footer */
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:20px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    header h1{
+        font-size:30px;
+    }
+
+    .profile-img{
+        width:140px;
+        height:140px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="https://via.placeholder.com/180" alt="Profile Photo" class="profile-img">
+
+    <h1>Your Name</h1>
+    <p>Web Developer | Front-End Developer | Student</p>
+</header>
+
+<section class="about">
+    <h2>About Me</h2>
+    <p>
+        Hello! I am a passionate web developer with knowledge of HTML, CSS,
+        and JavaScript. I enjoy building responsive and user-friendly websites.
+        I am always eager to learn new technologies and improve my skills.
+    </p>
+</section>
+
+<section class="skills">
+    <h2>My Skills</h2>
+
+    <div class="skills-container">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Bootstrap</div>
+        <div class="skill">Python</div>
+        <div class="skill">SQL</div>
+    </div>
+</section>
+
+<section class="projects">
+    <h2>My Projects</h2>
+
+    <div class="project-container">
+
+        <div class="project-card">
+            <h3>Landing Page</h3>
+            <p>
+                Designed a responsive landing page using HTML and CSS with
+                modern UI components.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>
+                Created a personal portfolio website to showcase skills,
+                projects and achievements.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>AR Monument Guide</h3>
+            <p>
+                Developed an Augmented Reality project that displays 3D
+                models and information about historical monuments.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="resume">
+    <h2>Resume</h2>
+    <p>Click below to download my resume.</p>
+
+    <a href="#">Download Resume</a>
+</section>
+
+<section class="contact">
+    <h2>Contact Information</h2>
+
+    <p><strong>Email:</strong> yourmail@gmail.com</p>
+    <p><strong>Phone:</strong> +91 XXXXX XXXXX</p>
+    <p><strong>Location:</strong> Hyderabad, India</p>
+    <p><strong>LinkedIn:</strong> linkedin.com/in/yourprofile</p>
+</section>
+
+<footer>
+    <p>© 2026 Your Name | Portfolio Website</p>
+</footer>
+
+</body>
+</html>
